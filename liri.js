@@ -3,10 +3,6 @@ var keys = require('./keys.js');
 var Twitter = require('twitter');
 var request = require('request');
 var Spotify = require('node-spotify-api');
-var tweetHistory = "";
-var trackName = "";
-var trackInfo = "";
-var movieInfo = "";
 
 var spotify = new Spotify({
     id: keys.spotifyKeys.client_id,
@@ -40,26 +36,18 @@ function spotifySearch(trackName) {
         if (err) {
             return console.log('Error occurred: ' + err);
         }
-        spotifyOutput(data);
+        var trackObj = {
+            "Track": data.tracks.items[0].name,
+            "Artist": data.tracks.items[0].artists[0].name,
+            "Preview Url": data.tracks.items[0].preview_url,
+            "Album": data.tracks.items[0].album.name
+        };
+        printObject(trackObj);
     });
-}
-
-function spotifyOutput(data) {
-    console.log(data.tracks.items[0].name);
-    console.log(data.tracks.items[0].artists[0].name);
-    console.log(data.tracks.items[0].preview_url);
-    console.log(data.tracks.items[0].album.name);
-    trackInfo =
-        data.tracks.items[0].name + "\n" +
-        data.tracks.items[0].artists[0].name + "\n" +
-        data.tracks.items[0].preview_url + "\n" +
-        data.tracks.items[0].album.name + "\n";
-    append(trackInfo);
 }
 
 function movieSearch(movieTitle) {
     var queryUrl = "http://www.omdbapi.com/?t=" + movieTitle + "&y=&plot=short&apikey=40e9cece";
-
     request(
         queryUrl,
         function(error, response, body) {
@@ -75,21 +63,28 @@ function movieSearch(movieTitle) {
                     "Plot": obj.Plot,
                     "Actors": obj.Actors
                 }
+                printObject(movieObj);
 
-                for (k in movieObj) {
-                    console.log(k + ":", movieObj[k]);
-                    movieInfo += k + ": " + movieObj[k] + "\n";
-                }
-                append(movieInfo);
             } else {
                 console.log('error: ', error);
             }
         });
 }
 
+// log results to console and append to log.txt
+function printObject(object) {
+    var outputString = "";
+    for (k in object) {
+        console.log(k + ":", object[k]);
+        outputString += k + ": " + object[k] + "\n";
+    }
+    append(outputString);
+}
+
 function twitterSearch() {
     client.get('statuses/user_timeline', params, function(error, tweets, response) {
         if (!error) {
+            var tweetHistory = "";
             for (var i = 0; i < 20; i++) {
                 console.log(tweets[i].created_at + " " + tweets[i].text)
                 tweetHistory += tweets[i].created_at + " " + tweets[i].text + "\n";
@@ -98,40 +93,27 @@ function twitterSearch() {
         }
     });
 }
-
-// concatenate search parameters into a single string
-function argvParse() {
-    var searchValue = "";
-    for (var i = 3; i < process.argv.length; i++) {
-        searchValue += process.argv[i] + " ";
-    }	// can also use slice() here
-    return searchValue;
-}
-
-// Twitter functionality
-if (process.argv[2] === 'my-tweets') {
-    twitterSearch();
-}
-
-// Spotify functionality
-if (process.argv[2] === 'spotify-this-song') {
-    if (process.argv[3] === undefined) {
-        spotifySearch("the sign ace of base");
+// search api's with provided term or search with default term if user left it blank
+function searchTermCheck(searchParameter, defaultTerm, searchFunction) {
+    if (searchParameter[3] === undefined) {
+        searchFunction(defaultTerm);
     } else {
-        trackName = argvParse();
-        spotifySearch(trackName);
+        searchFunction(searchParameter.slice(3).join(' '));
     }
 }
+// Execute code
+if (process.argv[2] === 'my-tweets') {
+    twitterSearch();
 
-// OMDB Functionality
-if (process.argv[2] === 'movie-time') {
-    var movieName = argvParse();
-    movieSearch(movieName);
-}
+} else if (process.argv[2] === 'spotify-this-song') {
+    searchTermCheck(process.argv, 'the sign ace of base', spotifySearch);
 
-// do-what-it-says
-if (process.argv[2] === 'do-what-it-says') {
+} else if (process.argv[2] === 'movie-time') {
+    searchTermCheck(process.argv, 'Mr. Nobody', movieSearch);
+
+} else if (process.argv[2] === 'do-what-it-says') {
     fs.readFile('random.txt', 'utf8', function(err, data) {
+
         if (err) {
             return console.log('ERROR!', err);
         }
@@ -142,12 +124,15 @@ if (process.argv[2] === 'do-what-it-says') {
                 break;
 
             case 'spotify-this-song':
-                spotifySearch(data.split(',')[1]);
+                spotifySearch(data.split(',')[1].trim());
                 break;
 
             case 'movie-time':
-                console.log('movies');
+                movieSearch(data.split(',')[1].trim());
                 break;
         }
-    });    
+    });
+
+} else {
+    console.log("Invalid search.  Use one of the following terms to search Liri: my-tweets, movie-time, spotify-this-song, do-what-it-says")
 }
