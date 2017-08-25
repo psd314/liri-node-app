@@ -1,0 +1,162 @@
+my-tweets:
+Thu Aug 24 01:32:44 +0000 2017 no whammy!!!
+Thu Aug 24 01:32:38 +0000 2017 bought a powerball ticket
+Thu Aug 24 01:32:28 +0000 2017 working on my twitter hw
+Wed Aug 23 14:30:32 +0000 2017 gonna be a tough workout today, plus jits
+Wed Aug 23 14:30:02 +0000 2017 techmology, what is it, do we need it?
+Wed Aug 23 14:29:37 +0000 2017 ready for lunch, but it's not time yet
+Wed Aug 23 14:29:18 +0000 2017 shorcut keys are the best
+Wed Aug 23 14:29:04 +0000 2017 working on db's with python
+Wed Aug 23 14:28:50 +0000 2017 time to get after it
+Wed Aug 23 14:28:39 +0000 2017 wakey wakey eggs and bac-y
+Wed Aug 23 03:29:03 +0000 2017 Lights out
+Wed Aug 23 03:28:47 +0000 2017 Been digging these Bai drinks lately
+Wed Aug 23 03:28:31 +0000 2017 Just had some popcorn, hit the spot
+Wed Aug 23 03:27:56 +0000 2017 Ready for using the backpack problem solution again
+Wed Aug 23 03:27:21 +0000 2017 Python is easily my favorite language
+Wed Aug 23 03:27:09 +0000 2017 can't wait to make progress on deep learning
+Wed Aug 23 03:26:54 +0000 2017 Looking forward to some jits tomorrow
+Wed Aug 23 03:26:32 +0000 2017 Getting tired
+Wed Aug 23 02:59:23 +0000 2017 Ready to tackle databases and SQL next
+Wed Aug 23 02:59:03 +0000 2017 Been learning about Node.js
+
+spotify-this-song:
+The Sign
+Ace of Base
+https://p.scdn.co/mp3-preview/4c463359f67dd3546db7294d236dd0ae991882ff?cid=4c9c6db10bc34e56a080b5ebce6d380d
+The Sign (US Album) [Remastered]
+
+spotify-this-song:
+Manic Monday
+The Bangles
+https://p.scdn.co/mp3-preview/9ddbc39e9651409225d6612eff1f913f95c3fa5f?cid=4c9c6db10bc34e56a080b5ebce6d380d
+Greatest Hits
+
+do-what-it-says:
+I Want It That Way
+Backstreet Boys
+https://p.scdn.co/mp3-preview/e72a05dc3f69c891e3390c3ceaa77fad02f6b5f6?cid=4c9c6db10bc34e56a080b5ebce6d380d
+The Hits--Chapter One
+
+do-what-it-says:
+Thu Aug 24 01:32:44 +0000 2017 no whammy!!!
+Thu Aug 24 01:32:38 +0000 2017 bought a powerball ticket
+Thu Aug 24 01:32:28 +0000 2017 working on my twitter hw
+Wed Aug 23 14:30:32 +0000 2017 gonna be a tough workout today, plus jits
+Wed Aug 23 14:30:02 +0000 2017 techmology, what is it, do we need it?
+Wed Aug 23 14:29:37 +0000 2017 ready for lunch, but it's not time yet
+Wed Aug 23 14:29:18 +0000 2017 shorcut keys are the best
+Wed Aug 23 14:29:04 +0000 2017 working on db's with python
+Wed Aug 23 14:28:50 +0000 2017 time to get after it
+Wed Aug 23 14:28:39 +0000 2017 wakey wakey eggs and bac-y
+Wed Aug 23 03:29:03 +0000 2017 Lights out
+Wed Aug 23 03:28:47 +0000 2017 Been digging these Bai drinks lately
+Wed Aug 23 03:28:31 +0000 2017 Just had some popcorn, hit the spot
+Wed Aug 23 03:27:56 +0000 2017 Ready for using the backpack problem solution again
+Wed Aug 23 03:27:21 +0000 2017 Python is easily my favorite language
+Wed Aug 23 03:27:09 +0000 2017 can't wait to make progress on deep learning
+Wed Aug 23 03:26:54 +0000 2017 Looking forward to some jits tomorrow
+Wed Aug 23 03:26:32 +0000 2017 Getting tired
+Wed Aug 23 02:59:23 +0000 2017 Ready to tackle databases and SQL next
+Wed Aug 23 02:59:03 +0000 2017 Been learning about Node.js
+
+do-what-it-says:
+Thu Aug 24 01:32:44 +0000 2017 no whammy!!!
+Thu Aug 24 01:32:38 +0000 2017 bought a powerball ticket
+Thu Aug 24 01:32:28 +0000 2017 working on my twitter hw
+Wed Aug 23 14:30:32 +0000 2017 gonna be a tough workout today, plus jits
+Wed Aug 23 14:30:02 +0000 2017 techmology, what is it, do we need it?
+Wed Aug 23 14:29:37 +0000 2017 ready for lunch, but it's not time yet
+Wed Aug 23 14:29:18 +0000 2017 shorcut keys are the best
+Wed Aug 23 14:29:04 +0000 2017 working on db's with python
+Wed Aug 23 14:28:50 +0000 2017 time to get after it
+Wed Aug 23 14:28:39 +0000 2017 wakey wakey eggs and bac-y
+Wed Aug 23 03:29:03 +0000 2017 Lights out
+Wed Aug 23 03:28:47 +0000 2017 Been digging these Bai drinks lately
+Wed Aug 23 03:28:31 +0000 2017 Just had some popcorn, hit the spot
+Wed Aug 23 03:27:56 +0000 2017 Ready for using the backpack problem solution again
+Wed Aug 23 03:27:21 +0000 2017 Python is easily my favorite language
+Wed Aug 23 03:27:09 +0000 2017 can't wait to make progress on deep learning
+Wed Aug 23 03:26:54 +0000 2017 Looking forward to some jits tomorrow
+Wed Aug 23 03:26:32 +0000 2017 Getting tired
+Wed Aug 23 02:59:23 +0000 2017 Ready to tackle databases and SQL next
+Wed Aug 23 02:59:03 +0000 2017 Been learning about Node.js
+
+do-what-it-says:
+Thu Aug 24 01:32:44 +0000 2017 no whammy!!!
+Thu Aug 24 01:32:38 +0000 2017 bought a powerball ticket
+Thu Aug 24 01:32:28 +0000 2017 working on my twitter hw
+Wed Aug 23 14:30:32 +0000 2017 gonna be a tough workout today, plus jits
+Wed Aug 23 14:30:02 +0000 2017 techmology, what is it, do we need it?
+Wed Aug 23 14:29:37 +0000 2017 ready for lunch, but it's not time yet
+Wed Aug 23 14:29:18 +0000 2017 shorcut keys are the best
+Wed Aug 23 14:29:04 +0000 2017 working on db's with python
+Wed Aug 23 14:28:50 +0000 2017 time to get after it
+Wed Aug 23 14:28:39 +0000 2017 wakey wakey eggs and bac-y
+Wed Aug 23 03:29:03 +0000 2017 Lights out
+Wed Aug 23 03:28:47 +0000 2017 Been digging these Bai drinks lately
+Wed Aug 23 03:28:31 +0000 2017 Just had some popcorn, hit the spot
+Wed Aug 23 03:27:56 +0000 2017 Ready for using the backpack problem solution again
+Wed Aug 23 03:27:21 +0000 2017 Python is easily my favorite language
+Wed Aug 23 03:27:09 +0000 2017 can't wait to make progress on deep learning
+Wed Aug 23 03:26:54 +0000 2017 Looking forward to some jits tomorrow
+Wed Aug 23 03:26:32 +0000 2017 Getting tired
+Wed Aug 23 02:59:23 +0000 2017 Ready to tackle databases and SQL next
+Wed Aug 23 02:59:03 +0000 2017 Been learning about Node.js
+
+do-what-it-says:
+Manic Monday
+The Bangles
+https://p.scdn.co/mp3-preview/9ddbc39e9651409225d6612eff1f913f95c3fa5f?cid=4c9c6db10bc34e56a080b5ebce6d380d
+Greatest Hits
+
+do-what-it-says:
+Manic Monday
+The Bangles
+https://p.scdn.co/mp3-preview/9ddbc39e9651409225d6612eff1f913f95c3fa5f?cid=4c9c6db10bc34e56a080b5ebce6d380d
+Greatest Hits
+
+do-what-it-says:
+Thu Aug 24 01:32:44 +0000 2017 no whammy!!!
+Thu Aug 24 01:32:38 +0000 2017 bought a powerball ticket
+Thu Aug 24 01:32:28 +0000 2017 working on my twitter hw
+Wed Aug 23 14:30:32 +0000 2017 gonna be a tough workout today, plus jits
+Wed Aug 23 14:30:02 +0000 2017 techmology, what is it, do we need it?
+Wed Aug 23 14:29:37 +0000 2017 ready for lunch, but it's not time yet
+Wed Aug 23 14:29:18 +0000 2017 shorcut keys are the best
+Wed Aug 23 14:29:04 +0000 2017 working on db's with python
+Wed Aug 23 14:28:50 +0000 2017 time to get after it
+Wed Aug 23 14:28:39 +0000 2017 wakey wakey eggs and bac-y
+Wed Aug 23 03:29:03 +0000 2017 Lights out
+Wed Aug 23 03:28:47 +0000 2017 Been digging these Bai drinks lately
+Wed Aug 23 03:28:31 +0000 2017 Just had some popcorn, hit the spot
+Wed Aug 23 03:27:56 +0000 2017 Ready for using the backpack problem solution again
+Wed Aug 23 03:27:21 +0000 2017 Python is easily my favorite language
+Wed Aug 23 03:27:09 +0000 2017 can't wait to make progress on deep learning
+Wed Aug 23 03:26:54 +0000 2017 Looking forward to some jits tomorrow
+Wed Aug 23 03:26:32 +0000 2017 Getting tired
+Wed Aug 23 02:59:23 +0000 2017 Ready to tackle databases and SQL next
+Wed Aug 23 02:59:03 +0000 2017 Been learning about Node.js
+
+do-what-it-says:
+Thu Aug 24 01:32:44 +0000 2017 no whammy!!!
+Thu Aug 24 01:32:38 +0000 2017 bought a powerball ticket
+Thu Aug 24 01:32:28 +0000 2017 working on my twitter hw
+Wed Aug 23 14:30:32 +0000 2017 gonna be a tough workout today, plus jits
+Wed Aug 23 14:30:02 +0000 2017 techmology, what is it, do we need it?
+Wed Aug 23 14:29:37 +0000 2017 ready for lunch, but it's not time yet
+Wed Aug 23 14:29:18 +0000 2017 shorcut keys are the best
+Wed Aug 23 14:29:04 +0000 2017 working on db's with python
+Wed Aug 23 14:28:50 +0000 2017 time to get after it
+Wed Aug 23 14:28:39 +0000 2017 wakey wakey eggs and bac-y
+Wed Aug 23 03:29:03 +0000 2017 Lights out
+Wed Aug 23 03:28:47 +0000 2017 Been digging these Bai drinks lately
+Wed Aug 23 03:28:31 +0000 2017 Just had some popcorn, hit the spot
+Wed Aug 23 03:27:56 +0000 2017 Ready for using the backpack problem solution again
+Wed Aug 23 03:27:21 +0000 2017 Python is easily my favorite language
+Wed Aug 23 03:27:09 +0000 2017 can't wait to make progress on deep learning
+Wed Aug 23 03:26:54 +0000 2017 Looking forward to some jits tomorrow
+Wed Aug 23 03:26:32 +0000 2017 Getting tired
+Wed Aug 23 02:59:23 +0000 2017 Ready to tackle databases and SQL next
+Wed Aug 23 02:59:03 +0000 2017 Been learning about Node.js
+
