@@ -3,7 +3,7 @@ var keys = require('./keys.js');
 var Twitter = require('twitter');
 var request = require('request');
 var Spotify = require('node-spotify-api');
-
+// handle errors for spotify and movie-this, search term not found
 var spotify = new Spotify({
     id: keys.spotifyKeys.client_id,
     secret: keys.spotifyKeys.client_secret
@@ -34,7 +34,8 @@ function spotifySearch(trackName) {
         query: trackName
     }, function(err, data) {
         if (err) {
-            return console.log('Error occurred: ' + err);
+            console.log(err + '\nThere was an error in your search.  Please try another term.');
+            return err;
         }
         var trackObj = {
             "Track": data.tracks.items[0].name,
@@ -53,16 +54,22 @@ function movieSearch(movieTitle) {
         function(error, response, body) {
             if (!error && response.statusCode === 200) {
                 var obj = JSON.parse(body);
-                var movieObj = {
-                    "Title": obj.Title,
-                    "Year": obj.Year,
-                    "IMDB Rating": obj.imdbRating,
-                    "Rotten Tomatoes": obj.Ratings[1].Value,
-                    "Country": obj.Country,
-                    "Language": obj.Language,
-                    "Plot": obj.Plot,
-                    "Actors": obj.Actors
+
+                if (obj.Title !== undefined) {
+                    var movieObj = {
+                        "Title": obj.Title,
+                        "Year": obj.Year,
+                        "IMDB Rating": obj.imdbRating,
+                        "Rotten Tomatoes": obj.Ratings[1].Value,
+                        "Country": obj.Country,
+                        "Language": obj.Language,
+                        "Plot": obj.Plot,
+                        "Actors": obj.Actors
+                    }
+                } else {
+                    console.log('Your search didn\'t produce any results. Please try another term.');
                 }
+
                 printObject(movieObj);
 
             } else {
@@ -108,7 +115,7 @@ if (process.argv[2] === 'my-tweets') {
 } else if (process.argv[2] === 'spotify-this-song') {
     searchTermCheck(process.argv, 'the sign ace of base', spotifySearch);
 
-} else if (process.argv[2] === 'movie-time') {
+} else if (process.argv[2] === 'movie-this') {
     searchTermCheck(process.argv, 'Mr. Nobody', movieSearch);
 
 } else if (process.argv[2] === 'do-what-it-says') {
@@ -127,12 +134,12 @@ if (process.argv[2] === 'my-tweets') {
                 spotifySearch(data.split(',')[1].trim());
                 break;
 
-            case 'movie-time':
+            case 'movie-this':
                 movieSearch(data.split(',')[1].trim());
                 break;
         }
     });
 
 } else {
-    console.log("Invalid search.  Use one of the following terms to search Liri: my-tweets, movie-time, spotify-this-song, do-what-it-says")
+    console.log("Invalid search.  Use one of the following terms to search Liri: my-tweets, movie-this, spotify-this-song, do-what-it-says")
 }
